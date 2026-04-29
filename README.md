@@ -18,7 +18,8 @@ Originally I used 3 different languages (Python, Java and Julia) with native flo
 maths libraries:
 - mpmath for Python
 - BigDecimal for Java
-- Apfloat for Java (but only on the macbooks because it was much slower)
+- Apfloat for Java (but only on the macbooks because it was much slower and I didn't have enough
+patience to run it on the Pi)
 
 Unsurprisingly the Pi4 was the slowest.
 
@@ -31,6 +32,19 @@ Unsurprisingly the Pi4 was the slowest.
 All times are in milliseconds.
 
 ## Background Information
+
+The original article in Byte magazine was comparing the speeds of the 8087 and 80287 maths co-processors
+and had several different benchmarks in different languages (including Pascal, Fortran and even Lotus 1-2-3).
+
+![The original listing](images/byte_savage.png)  
+
+The Sky & Telescope article was evaluating the speed and accuracy of different computers and languages for
+astronomical calculations.
+
+![The Sky and Telescope article](images/sky_and_telescope.png)  
+
+
+### The ZX 81 version
 
 ![ZX 81 background information](images/zxpand_1.png)  
 ![ZX 81 background information and listing](images/zxpand_2.png) 
