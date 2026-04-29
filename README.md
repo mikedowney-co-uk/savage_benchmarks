@@ -1,7 +1,7 @@
 # The *Savage* benchmark
 
 Here are various implementations of a maths-heavy benchmark which first appeared Byte magazine in 1985.
-I discovered it from a ZX81 listing in the October/November 1987 issue of a newsletter called *ZX Expand*. I was looking
+I discovered it from a ZX81 listing in the October/November 1987 issue of a newsletter called *ZX Appeal*. I was looking
 for some short ZX81 programmes to type in and thought I'd give it a go.
 
 The version presented in the newsletter ran in 15.5 minutes. Running at 28MHz on a Spectrum Next in ZX81 mode, it took 2m 5s.
@@ -29,3 +29,9 @@ Unsurprisingly the Pi4 was the slowest.
 | Mac Neo   |   0.27 | 64.1  | 0.233   |      662   |  8930   |
 
 All times are in milliseconds.
+
+## Background Information
+
+![ZX 81 background information](images/zxpand_1.png)  
+![ZX 81 background information and listing](images/zxpand_2.png) 
+
