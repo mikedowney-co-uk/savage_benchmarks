@@ -23,11 +23,11 @@ patience to run it on the Pi)
 
 Unsurprisingly the Pi4 was the slowest.
 
-| Machine   | Python |  Java |  mpmath | BigDecimal | Apfloat |
-|-----------|-------:|------:|--------:|-----------:|--------:|
-| Pi 4      |  2.3   |   478 |   0.795 |       9600 |         |
-| Intel Mac |   0.69 | 176   | 0.215   |       1170 |   22580 |
-| Mac Neo   |   0.27 | 64.1  | 0.233   |      662   |  8930   |
+| Machine   | Python | mpmath | Java  | BigDecimal | Apfloat |
+|-----------|-------:|-------:|------:|-----------:|--------:|
+| Pi 4      |    2.3 |    478 | 0.795 |       9600 |         |
+| Intel Mac |   0.69 |    176 | 0.215 |       1170 |   22580 |
+| Mac Neo   |   0.27 |   64.1 | 0.233 |        662 |    8930 |
 
 All times are in milliseconds.
 
