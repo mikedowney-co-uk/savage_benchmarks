@@ -42,10 +42,12 @@ These all use software floating point since back then machines with hardware flo
 | Spectrum Next | 28  | Basic                   | 2m23           |
 | Atari ST      | 8   | HiSoft Basic (Compiled) | 7s (single)    |
 | Atari ST      | 8   | HiSoft Basic (Compiled) | 3m46s (double) |
+| RC2014        | 7.3 | Z80 Microsoft Basic     | 1m58s          |
 
 On the Atari ST, the Single precision maths was fast but inaccurate, giving a final
 value of `2726.9` (it should be `2500` exactly). Double precision maths gave `2500.000000008`.
-The Sinclair machines all gave `2500±1`.
+The Sinclair machines all gave `2500±1` using a 5 byte FP format. The RC2014 uses single precision
+but is more accurate than the Atari ST, giving `2631.72`.
 
 
 ## Background Information

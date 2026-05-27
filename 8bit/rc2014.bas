@@ -1,0 +1,6 @@
+10 REM Version in Microsoft BASIC for the RC2014
+20 LET A = 1
+30 FOR I = 1 TO 2499
+40 LET A = TAN(ATN(EXP(LOG(SQR(A*A))))) + 1
+50 NEXT I
+60 PRINT I, A
