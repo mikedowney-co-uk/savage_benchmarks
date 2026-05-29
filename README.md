@@ -37,12 +37,13 @@ All times are in milliseconds.
 
 These all use software floating point since back then machines with hardware floats were expensive and/or rare.
 
-| Machine       | MHz | Language                | Time           |
-|---------------|-----|-------------------------|----------------|
-| Spectrum Next | 28  | Basic                   | 2m23           |
-| Atari ST      | 8   | HiSoft Basic (Compiled) | 7s (single)    |
-| Atari ST      | 8   | HiSoft Basic (Compiled) | 3m46s (double) |
-| RC2014        | 7.3 | Z80 Microsoft Basic     | 1m58s          |
+| Machine        | MHz | Language                | Time           |
+|----------------|-----|-------------------------|----------------|
+| Spectrum Next  | 28  | Basic                   | 2m23           |
+| Atari ST       | 8   | HiSoft Basic (Compiled) | 7s (single)    |
+| Atari ST       | 8   | HiSoft Basic (Compiled) | 3m46s (double) |
+| RC2014         | 7.3 | Z80 Microsoft Basic     | 1m58s          |
+| Commodore 64   | 1   | Microsoft Basic         | 7m46s          |
 
 On the Atari ST, the Single precision maths was fast but inaccurate, giving a final
 value of `2726.9` (it should be `2500` exactly). Double precision maths gave `2500.000000008`.
