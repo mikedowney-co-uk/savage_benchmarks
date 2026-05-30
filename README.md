@@ -37,19 +37,20 @@ All times are in milliseconds.
 
 These all use software floating point since back then machines with hardware floats were expensive and/or rare.
 
-| Machine        | MHz | Language                | Time           |
-|----------------|-----|-------------------------|----------------|
-| Spectrum Next  | 28  | Basic                   | 2m23           |
-| Atari ST       | 8   | HiSoft Basic (Compiled) | 7s (single)    |
-| Atari ST       | 8   | HiSoft Basic (Compiled) | 3m46s (double) |
-| RC2014         | 7.3 | Z80 Microsoft Basic     | 1m58s          |
-| Commodore 64   | 1   | Microsoft Basic         | 7m46s          |
+| Machine        | MHz | Language                | Time           | Result     |
+|----------------|-----|-------------------------|----------------|------------|
+| Spectrum Next  | 28  | Basic                   | 2m23           | 2500.6763  |
+| Atari ST       | 8   | HiSoft Basic (Compiled) | 7s (single)    | 2726.9     |
+| Atari ST       | 8   | HiSoft Basic (Compiled) | 3m46s (double) | 2500.00000 |
+| RC2014         | 7.3 | Z80 Microsoft Basic     | 1m58s          | 2631.72    |
+| Commodore 64   | 1   | Microsoft/CBM Basic     | 7m46s          | 2500.00009 |
+| BBC Micro      | 2   | BBC Basic               | 5m12           | 2599.68602 |
 
-On the Atari ST, the Single precision maths was fast but inaccurate, giving a final
-value of `2726.9` (it should be `2500` exactly). Double precision maths gave `2500.000000008`.
-The Sinclair machines all gave `2500±1` using a 5 byte FP format. The RC2014 uses single precision
+- On the Atari ST, the Single precision maths was fast but inaccurate, but the double precision was
+much slower more accurate, giving `2500.000000008`.
+- The Sinclair machines all gave `2500±1` using a 5 byte FP format. The RC2014 uses single precision
 but is more accurate than the Atari ST, giving `2631.72`.
-
+- The BBC Basic version was run using the BBC Micro core on the Spectrum Next.
 
 ## Background Information
 

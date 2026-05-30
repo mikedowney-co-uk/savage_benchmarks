@@ -1,0 +1,7 @@
+10 REM BBC BASIC version
+20 a = 1
+30 FOR i = 1 TO 2499
+40 a = TAN(ATN(EXP(LN(SQR(a*a))))) + 1
+50 NEXT i
+60 PRINT i
+70 PRINT a
