@@ -45,12 +45,14 @@ These all use software floating point since back then machines with hardware flo
 | RC2014         | 7.3 | Z80 Microsoft Basic     | 1m58s          | 2631.72    |
 | Commodore 64   | 1   | Microsoft/CBM Basic     | 7m46s          | 2500.00009 |
 | BBC Micro      | 2   | BBC Basic               | 5m12           | 2599.68602 |
+| Sinclair QL    | 7.5 | SuperBasic              | 10.3s          | 2499.712   |
 
 - On the Atari ST, the Single precision maths was fast but inaccurate, but the double precision was
 much slower more accurate, giving `2500.000000008`.
-- The Sinclair machines all gave `2500±1` using a 5 byte FP format. The RC2014 uses single precision
-but is more accurate than the Atari ST, giving `2631.72`.
-- The BBC Basic version was run using the BBC Micro core on the Spectrum Next.
+- The RC2014 uses single precision but is more accurate than the Atari ST, giving `2631.72`.
+- The BBC Basic and Sinclair QL versions were run using the appropriate cores on the Spectrum Next.
+- The Sinclair machines all gave `2500±1`. The 8-bit machines use a 5 byte FP format unlike
+  the more common 4 byte used in most other machines.
 
 ## Background Information
 

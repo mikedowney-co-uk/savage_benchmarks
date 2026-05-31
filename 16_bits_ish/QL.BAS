@@ -1,0 +1,6 @@
+10 REMark Sinclair QL
+20 A=1
+30 FOR i=1 TO 2499
+40 A = TAN(ATAN(EXP(LN(SQRT(A*A)))))+1
+50 NEXT i
+60 PRINT i,A
