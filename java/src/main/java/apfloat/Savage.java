@@ -8,7 +8,7 @@ public class Savage {
     // woah this is slow compared to the others.
     static final double ITERS = 1.0;
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
         Apfloat a = new Apfloat(1, 100);
         long t = System.currentTimeMillis();
         for (int i = 0; i < (int) ITERS; i++) {
