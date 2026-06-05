@@ -2,14 +2,22 @@ package apfloat;
 
 import org.apfloat.Apfloat;
 import org.apfloat.ApfloatMath;
+import org.apfloat.internal.LongBuilderFactory;
 
 public class Savage {
 
     // woah this is slow compared to the others.
     static final double ITERS = 1.0;
+    final static int precision = 100;
 
     public static void main(String[] args) {
-        Apfloat a = new Apfloat(1, 100);
+        // We need to force a usage of LongBuilderFactory, Graal's static
+        // analysis misses it. There are workarounds but this was quick and easy
+        // just to get the test running.
+        LongBuilderFactory bf = new LongBuilderFactory();
+        System.out.println("force inclusion of " + bf);
+
+        Apfloat a = new Apfloat( 1, precision);
         long t = System.currentTimeMillis();
         for (int i = 0; i < (int) ITERS; i++) {
             a = calc();
@@ -20,7 +28,6 @@ public class Savage {
     }
 
     static Apfloat calc() {
-        final int precision = 100;
         Apfloat a = new Apfloat(1, precision);
         Apfloat one = new Apfloat(1, precision);
 
